@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epic Games - FIFA 24 GRATIS</title>
+    <link rel="icon" href="epic_games.png" type="image/x-icon">
+    <style>
+        body {
+            background-color: #121212;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #container {
+            text-align: center;
+        }
+
+        #title {
+            font-weight: 700;
+            font-size: 5vh;
+        }
+
+        #price {
+            color: rgb(112, 217, 112);
+            font-weight: 700;
+            font-size: 3vh;
+        }
+
+        #epicgames {
+            width: 6vh;
+            height: auto;
+            float: left;
+            transition: transform 0.3s ease;
+        }
+
+        #epicgames:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+        #ladda {
+            width: 72vh;
+            height: 13vh;
+            font-size: 3vh;
+            font-weight: 700;
+            background-color: #323232;
+            border-radius: 10px;
+            border: none;
+            color: white;
+            transition: transform 0.3s ease;
+            margin-top: 20px;
+        }
+
+        #ladda:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img src="epic_games.png" id="epicgames" alt="Epic Games Logo">
+        <img src="FC-Cover.jpg" id="cover" alt="FIFA 24 Cover">
+        <p id="title">FIFA 24</p>
+        <p id="price">GRATIS</p>
+        <button id="ladda">LADDA NER</button>
+    </div>
+
+    <script>
+        document.getElementById('ladda').addEventListener('click', function() {
+            const link = document.createElement('a');
+            link.href = 'FIFA 24.zip'; // Ändra till sökvägen till din nedladdningsfil
+            link.download = 'FIFA 24.zip'; // Ändra till filnamnet du vill att användaren ska ladda ner
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
+    </script>
+</body>
+</html>
